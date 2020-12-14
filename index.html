@@ -58,11 +58,11 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="is-active">
-                  <span class="icon"><i class="fa fa-table"></i></span> Links
+                <a href="#" class="is-active sub-menu-title">
+                  <span class="icon"><i class="fa fa-table"></i></span> Links <i class="fa fa-angle-down"></i>
                 </a>
         
-                <ul>
+                <ul class="sub-menu-list">
                   <li>
                     <a href="#">
                       <span class="icon is-small"><i class="fa fa-link"></i></span> Link1
@@ -74,6 +74,7 @@
                     </a>
                   </li>
                 </ul>
+
               </li>
               <li>
                 <a href="#" class="">
@@ -139,7 +140,19 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+$(".sub-menu-title").click(function(){
 
+$(this).next('.sub-menu-list').toggle();
+$(this).children().find('i').toggleClass(function(){
+
+    if ($(this).next('.sub-menu-list').is(":hidden")) {
+    return "fa-angle-down";
+  } else {
+    return "fa-angle-up";
+  }
+});
+
+});
 
 </script>
   </body>
