@@ -5,11 +5,11 @@ body,
 }
 #app {
   min-height: 100%;
-  //display: flex;
-  //flex-direction: column;
+  /* //display: flex;
+  //flex-direction: column; */
 }
 .main-content {
-  //flex: 1;
+  /* //flex: 1; */
 }
 .footer {
   margin-top: -12px;
@@ -18,4 +18,63 @@ body,
   #menu-toggle:checked + .nav-menu {
     display: block;
   }
+}
+
+/* new css */
+.ra-aside
+{
+  background-color: #e5e3e0;
+  max-width: 175px;
+  height:100vh;
+  overflow-y: auto;
+
+  
+}
+
+.ra-aside-menu-list > li > a:hover
+{
+  background-color:black;
+ color:white;
+}
+.ra-aside-menu-list > li > a .ion
+{
+ margin-right:10px;
+}
+
+
+
+.ra-aside-menu-list > li > a
+{
+  display:block;
+  color:black;
+  padding: .5em .75em;
+}
+
+
+.ra-aside-menu-list .ra-aside-menu-sub-list >li
+{
+text-align: center;
+
+}
+ .ra-aside-menu-sub-list >li > a
+{
+  display:block;
+  color:black;
+  padding: .5em .75em;
+}
+
+ .ra-aside-menu-sub-list >li:hover
+{
+  background-color:black;
+ color:white;
+}
+ .ra-aside-menu-sub-list >li >a:hover
+{
+  background-color:black;
+ color:white;
+}
+
+.ra-aside-menu-sub-list >li >a .ion
+{
+ margin-right:10px;
 }
